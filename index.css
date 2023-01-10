@@ -24,17 +24,25 @@
 main{
     display: flex;
     flex-direction: row;
-    height: 100vh;
+    align-content: center;
+    justify-content: center;
+    margin-top: 4rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
 }
 
 #left{
     width: 50%;
-    height: 100%;
 }
 
 #rigth{
     width: 50%;
-    height: 100%;
     display: flex;
     justify-content: center;
 }
@@ -57,11 +65,12 @@ main{
     display: flex;
     flex-direction: column;
     justify-content:center;
+    margin-block: 1rem;
 }
 
 #main_inputs h2{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 20px;
     color: #1A202C;
     font-family:"Merriweather";
@@ -69,10 +78,14 @@ main{
 
 #main_inputs h1{
     font-weight: 700;
-    font-size: 26px;
+    font-size: 1.5rem;
     line-height: 33px;
     color: #1A202C;
     font-family:"Merriweather";
+}
+
+#main_inputs button{
+    margin-block: 1rem;
 }
 
 #inputs_login{
@@ -81,7 +94,7 @@ main{
 
 #inputs_login p{
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 19px;
     color: #1A202C;
 }
@@ -97,26 +110,27 @@ main{
 #inputs_bottom{
     display: flex;
     flex-direction: row;
-    margin-block: 30px;
+    margin-block: 1.5rem;
+    justify-content: space-between;
 }
 
-#inputs_bottom p{
-    margin-inline: 5px;
+#check_box{
+    display: flex;
+    flex-direction: row;
 }
 
-#inputs_bottom a{
-  margin-inline: 35px;
+#check_box p{
+    margin-inline: 0.4rem;
 }
 
 #button_login{
     background: #04C45C;
     border-radius: 5px;
-    height: 50px;
+    height: 4rem;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 19px;
     color: #FFFFFF;
-    margin-bottom: 20px;
 }
 
 #button_google{
@@ -126,17 +140,30 @@ main{
     justify-content: center;
     background: #1A202C;
     border-radius: 5px;
-    height: 50px;
+    height: 4rem;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 19px;
+    font-size: 1rem;
     color: #FFFFFF;
 }
 
 #button_google p{
-    margin-inline: 10px;
+    margin-inline: 0.5rem;
 }
 
+#button_google img{
+    margin-inline: 1rem;
+}
+
+#register{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+#register p{
+    margin-inline: 0 0.5rem;
+}
 
 @media (max-width:768px){
     
@@ -160,26 +187,4 @@ main{
     #main_inputs{
         width: 85%;
     }
-
-    #inputs_login p{
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
-        color: #1A202C;
-    }
-
-    #inputs_login input{        
-        width: 100%;
-    }
-    
-    #inputs_bottom a{
-      margin-inline: 30px;
-      font-size: 13px;
-    }
-
-    #inputs_bottom p{
-        margin-inline: 5px;
-        font-size: 13px;
-      }
-    
 }
