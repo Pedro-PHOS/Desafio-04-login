@@ -26,7 +26,7 @@ main{
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    margin-top: 4rem;
+    height: 98vh;
 }
 
 a{
@@ -113,6 +113,10 @@ button{
     justify-content: space-between;
 }
 
+#inputs_bottom a{
+    font-size: 90%;
+}
+
 #check_box{
     display: flex;
     flex-direction: row;
@@ -120,6 +124,7 @@ button{
 
 #check_box p{
     margin-inline: 0.4rem;
+    font-size: 90%;
 }
 
 #button_login{
@@ -162,6 +167,49 @@ button{
 
 #register p{
     margin-inline: 0 0.5rem;
+}
+
+/* ***** Copyright *****  */
+
+#copy_section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 90%;
+    margin-top: 1rem;
+}
+
+#copy_button{
+    background-color: #F3F5F7;
+    color: #000000;
+    border: 1px solid black;
+    border-bottom: 0px solid;
+    cursor: pointer;
+    align-self: flex-end;
+    width: 1rem;
+    height: 1rem;
+    font-size: 0.8rem;
+}
+
+#copy_hidden{
+    display: none;
+}
+
+#copy_hidden a{
+    text-decoration: none;
+    color:#569ff5;
+    margin-inline: 0rem;
+}
+
+#copy_section.show #copy_hidden{
+    font-size: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 4rem;
+    color: #000000;
+    background-color: #F3F5F7;
+    border-top: 1px solid black;
 }
 
 @media (max-width:1024px){
